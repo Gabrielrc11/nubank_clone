@@ -19,11 +19,11 @@
 ### Prévia do projeto
 Se tudo tiver dado certo, é assim que você deve vizualizar o projeto no seu dispositivo através do Expo Go ou o emulador do Android ou IOS:
 <br><br>
-<img src="Application.jpeg" alt="Application" width="200"/>
+<img src="Application.jpg" alt="Application" width="200"/>
 
 ### BUG Temporario
-Quando se clica na engrenagem no canto superior direito da tela principal do app para ir para as configurações do modo claro/escuro ele altera apenas as cores da página atual, como descrito no vídeo:
-<video src="Application.mp4" width="1792" height="828" controls></video>
+Quando se clica na engrenagem no canto superior direito da tela principal do app para ir para as configurações do modo claro/escuro ele altera apenas as cores da página atual, como descrito:
+<img src="Application.gif" alt="Application" width="200"/>
 
 ## Padronizações
 ### Commits
@@ -64,11 +64,11 @@ Esses **préfixo** podem ser:
 ### Project preview
 If everything went well, this is how you should view the project on your device using Expo Go or the Android or IOS emulator:
 <br><br>
-<img src="Application.jpeg" alt="Application" width="200"/>
+<img src="Application.jpg" alt="Application" width="200"/>
 
 ### Temporary BUG
-When you click on the gear in the top right corner of the app's main screen to go to the light/dark mode settings, it only changes the colors of the current page, as described in the video:
-<video src="Application.mp4" width="1792" height="828" controls></video>
+When you click on the gear in the top right corner of the app's main screen to go to the light/dark mode settings, it only changes the colors of the current page, as described:
+<img src="Application.gif" alt="Application" width="200"/>
 
 ## Standardizations
 ### Commits
