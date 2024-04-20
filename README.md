@@ -23,6 +23,7 @@ Se tudo tiver dado certo, é assim que você deve vizualizar o projeto no seu di
 
 ### BUG Temporario
 Quando se clica na engrenagem no canto superior direito da tela principal do app para ir para as configurações do modo claro/escuro ele altera apenas as cores da página atual, como descrito:
+<br><br>
 <img src="Application.gif" alt="Application" width="200"/>
 
 ## Padronizações
@@ -68,6 +69,7 @@ If everything went well, this is how you should view the project on your device 
 
 ### Temporary BUG
 When you click on the gear in the top right corner of the app's main screen to go to the light/dark mode settings, it only changes the colors of the current page, as described:
+<br><br>
 <img src="Application.gif" alt="Application" width="200"/>
 
 ## Standardizations
