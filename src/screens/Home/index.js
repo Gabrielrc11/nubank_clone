@@ -1,4 +1,6 @@
-import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+
 import logo from "../../assets/logo.png"
 import settings from "../../assets/setting.png"
 import mastercard from "../../assets/mastercard.png"
@@ -8,12 +10,15 @@ import boleto from "../../assets/boleto.png"
 import dinheiro from "../../assets/dinheiro.png"
 
 export function Home() {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
         <View style={styles.content}>
             <View style={styles.header}>
                 <Image source={logo}/>
-                <Image source={settings}/>
+                <TouchableOpacity onPress={() => navigation.navigate('Configs')}>
+                  <Image source={settings}/>
+                </TouchableOpacity>
             </View>
             <View style={styles.card}>
                 <View style={styles.cardHeader}>
