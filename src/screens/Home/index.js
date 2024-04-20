@@ -21,18 +21,22 @@ export function Home() {
                 </TouchableOpacity>
             </View>
             <View style={styles.card}>
+              <TouchableOpacity onPress={() => navigation.navigate('EditName')}>
                 <View style={styles.cardHeader}>
                     <View />
                     <Image source={mastercard}/>
                 </View>
                 <Text style={styles.cardText}>Gabriel Carvalho</Text>
+                </TouchableOpacity>
             </View>
             <View style={styles.cardDetails}>
+              <TouchableOpacity onPress={() => navigation.navigate('EditMoney')}>
                 <View style={styles.cardDetailsHeader}>
                     <Text style={styles.cardDetailsHeaderText}>Saldo disponivel</Text>
                     <Image source={wallet}/>
                 </View>
                 <Text style={styles.cardDetailsText}>22.000,00</Text>
+              </TouchableOpacity>
             </View>
         </View>
         <View style={styles.footer}>
@@ -105,6 +109,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     lineHeight: 36,
     fontWeight: "600",
+    paddingTop: 75,
   },
   cardDetailsHeader: {
     justifyContent: "space-between",
