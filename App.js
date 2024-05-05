@@ -3,8 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import { Home } from "./src/screens/Home";
 import { Configs } from "./src/screens/Configs"
-import { EditName } from "./src/screens/EditName"
-import { EditMoney } from "./src/screens/EditMoney"
+import { Cota } from "./src/screens/Cota"
 
 export default function App() {
   const Stack = createStackNavigator();
@@ -22,13 +21,8 @@ export default function App() {
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="EditName"
-          component={EditName}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="EditMoney"
-          component={EditMoney}
+          name="Cota"
+          component={Cota}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

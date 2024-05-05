@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity, TextInput } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 import logo from "../../assets/logo.png"
@@ -26,7 +26,7 @@ export function Home() {
                     <View />
                     <Image source={mastercard}/>
                 </View>
-                <Text style={styles.cardText}>Gabriel Carvalho</Text>
+                <TextInput style={styles.cardText}>Insia seu nome</TextInput>
                 </TouchableOpacity>
             </View>
             <View style={styles.cardDetails}>
@@ -35,7 +35,7 @@ export function Home() {
                     <Text style={styles.cardDetailsHeaderText}>Saldo disponivel</Text>
                     <Image source={wallet}/>
                 </View>
-                <Text style={styles.cardDetailsText}>22.000,00</Text>
+                <TextInput style={styles.cardDetailsText}>Insira um valor</TextInput>
               </TouchableOpacity>
             </View>
         </View>
@@ -47,16 +47,20 @@ export function Home() {
                     <Text style={styles.footerCardText}>Fazer um Pix</Text>
                 </View>
                 <View style={styles.footerCard}>
+                  <TouchableOpacity onPress={() => navigation.navigate('Cota')}>
+                    <Image source={dinheiro}/>
+                    <Text></Text>
+                    <Text></Text>
+                    <Text style={styles.footerCardText}>Cotações</Text>
+                  </TouchableOpacity>
+                </View>
+                <View style={styles.footerCard}>
                     <Image source={boleto}/>
                     <Text style={styles.footerCardText}>Pagar um boleto</Text>
                 </View>
                 <View style={styles.footerCard}>
                     <Image source={dinheiro}/>
                     <Text style={styles.footerCardText}>Fazer um deposito</Text>
-                </View>
-                <View style={styles.footerCard}>
-                    <Image source={pix}/>
-                    <Text style={styles.footerCardText}>Fazer um Pix</Text>
                 </View>
             </ScrollView>
         </View>
